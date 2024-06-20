@@ -4,12 +4,12 @@ import { getFirestore } from 'firebase/firestore';
 import { getAuth } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCoc4d_mVGlqLLCd6l1p4euZssgdSMvFiQ",
-  authDomain: "ai-travel-planner-f8e93.firebaseapp.com",
-  projectId: "ai-travel-planner-f8e93",
-  storageBucket: "ai-travel-planner-f8e93.appspot.com",
-  messagingSenderId: "944018198295",
-  appId: "1:944018198295:web:a45845dd20a98a10387152"
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
 };
 
 const app = initializeApp(firebaseConfig);
